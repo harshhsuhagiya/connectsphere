@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Colors */
+  --ag-primary: #D97757;
+  --ag-secondary: #4A6670;
+  --ag-background: #FDFBF7;
+  --ag-surface: #FFFFFF;
+  --ag-text: #2C2A29;
+  --ag-text-secondary: #6B6968;
+  --ag-border: #E8E3DF;
+  --ag-accent: #E8A87C;
+
+  /* Typography */
+  --ag-font-family: 'DM Sans', sans-serif;
+  --ag-font-family-heading: 'Lora', serif;
+
+  /* Border Radius */
+  --ag-radius-sm: 8px;
+  --ag-radius-md: 16px;
+  --ag-radius-lg: 24px;
+}
+
+body {
+  font-family: var(--ag-font-family);
+  background-color: var(--ag-background);
+  color: var(--ag-text);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ag-font-family-heading);
+}
+
+.ag-btn {
+  @apply bg-primary text-white px-6 py-2 rounded-md font-medium transition-all duration-300 hover:bg-opacity-90 hover:-translate-y-0.5 shadow-sm hover:shadow-md;
+}
+
+.ag-input {
+  @apply w-full px-4 py-2 border-2 border-border rounded-md bg-surface text-text transition-colors duration-200 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary;
+}
+
+.ag-card {
+  @apply bg-surface rounded-lg p-6 shadow-sm border border-border;
+}
