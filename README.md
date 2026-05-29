@@ -92,5 +92,3 @@ cd server && npm install && npm run dev
 # Start Client
 cd client && npm install && npm run dev
 ```
-
-*Built sequentially by Antigravity AI.*
